@@ -1,0 +1,114 @@
+.home_page {
+  margin-top: 64px;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-image: url(../../../assets/images/home/sec-1-large.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .first_section {
+    height: 100%;
+    .container {
+      padding: 20px 40px;
+      height: 100%;
+
+      .row {
+        height: 100%;
+
+        .content {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h2 {
+            font-size: 50px;
+            font-weight: 800;
+            color: #000000;
+          }
+          .dot_line {
+            width: 50px !important;
+            height: 5px !important;
+            background-color: #000000;
+            border-radius: 10px;
+            margin-top: 30px;
+          }
+          p {
+            margin-top: 30px;
+          }
+          button {
+            margin-top: 30px;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px 20px;
+            border: 2px solid #3f33e7;
+            border-radius: 3px;
+            outline: 0px;
+            color: #3f33e7;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: #fff;
+              background-color: #3f33e7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// media query start
+@media only screen and (max-width: 768px) {
+  .first_section {
+    .container {
+      .row {
+        .content {
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .first_section {
+    .container {
+      .row {
+        .content {
+          display: grid;
+          place-items: center;
+          h2 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600 !important;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .first_section {
+    .container {
+      padding: 20px 20px !important;
+      .row {
+        .content {
+          h2 {
+            font-size: 16px;
+
+            font-weight: 500 !important;
+          }
+        }
+      }
+    }
+  }
+}

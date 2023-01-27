@@ -1,17 +1,58 @@
 .footer_section {
-  .contact {
+  background-color: #3f33e7;
+  color: #fff;
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .social_contact {
     .social {
       width: 100%;
+      margin-top: 25px;
+      margin-bottom: 30px;
       display: flex;
-      justify-content: space-between;
+      // justify-content: center;
       align-items: center;
+      gap: 20px;
       .icon {
-        img {
-          width: 19px;
-          height: 19px;
-          color: red;
+        i {
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          font-size: 25px;
+
+          &:hover {
+            color: rgb(217, 217, 228);
+          }
         }
       }
+    }
+  }
+  .lists {
+    ul {
+      list-style: none;
+      list-style-type: none;
+      padding: 0px;
+
+      li {
+        margin-top: 5px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: rgb(217, 217, 228);
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    ul li {
+      display: flex;
+      gap: 10px;
     }
   }
 }

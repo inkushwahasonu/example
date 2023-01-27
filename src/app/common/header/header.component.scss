@@ -36,7 +36,8 @@
             transition: all 0.2s ease-in-out;
           }
 
-          &:hover {
+          &:hover,
+          &.active {
             color: #3f33e7;
 
             & a {

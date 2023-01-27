@@ -35,7 +35,10 @@
             margin-top: 30px;
           }
           button {
-            margin-top: 30px;
+            margin {
+              top: 30px;
+              bottom: 20px;
+            }
             width: fit-content;
             height: fit-content;
             padding: 10px 20px;
@@ -67,10 +70,6 @@
   // first section start
   .second_section {
     height: calc(100vh - 64px);
-    // background-image: url(../../../assets/images/home/sec-1-large.svg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
 
     .image {
       display: flex;
@@ -146,6 +145,13 @@
             font-size: 16px;
 
             font-weight: 500 !important;
+          }
+
+          // for second section
+          .to_right_align {
+            width: 100%;
+            display: flex;
+            justify-content: center;
           }
         }
       }
